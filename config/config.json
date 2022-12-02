@@ -1,6 +1,6 @@
 {
     "token": "",
     "prefix": "-",
-    "mongodb": ""
+    "mongodb": "mongodb+srv://SoySix:Pelonchas16@devsix.v6fz9xh.mongodb.net/?retryWrites=true&w=majority"
 
 }

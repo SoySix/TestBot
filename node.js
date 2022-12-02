@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
-const config = require('')
-require('colors')
+const config = require('./config/config.json')
+require('colors')//npm i colors@1.4.0
 
 const client = new Discord.Client({
     intents: [

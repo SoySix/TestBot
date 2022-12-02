@@ -13,11 +13,11 @@ module.exports = (client) => {
                     console.log(`Comando [${carpeta}/${archivo}]`, `error -> el comando no existe.`.brightRed)
                     continue;
                 }
-                if(commands.aliases && Array.isArray(comando.aliases)) comando.aliases.forEach((alias) => client.aliases.set(alias, comando.name));
+                if(comando.aliases && Array.isArray(comando.aliases)) comando.aliases.forEach((alias) => client.aliases.set(alias, comando.name));
             }
         });
         console.log(`${comandos} Comandos cargados`.brightGreen);
     } catch(e){
-        console.log(e.bgRed)
+        console.log(e.red)
     }
 }

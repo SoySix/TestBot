@@ -3,10 +3,11 @@ module.exports = {
 }
 
 async function asegurar(schema, id, id2, objeto){
-    const data = await schema.findOne({id: id2})
+    let data = await schema.findOne({id: id2})
     if(!data){
         console.log("No se encontro una base de datos...")
-        data = await new schema(objeto).then(data => await data.save());
+        data = await new schema(objeto);
+        data.save();
     }
     return data;
 }
